@@ -56,17 +56,18 @@ if __name__ == '__main__':
 
     # Provide the path of the dataset
     # which is split already to train, val, test
-    data_folder = os.path.join(config["dataset_folder"],  config["test_folder"], 'TASK1_match_mismatch')
+    # data_folder = os.path.join(config["dataset_folder"],  config["test_folder"], 'TASK1_match_mismatch')
+    data_folder = '/scratch/as16386/homes.esat.kuleuven.be/~lbollens/sparrkulee/test_set/TASK1_match_mismatch'
     eeg_folder = os.path.join(data_folder, 'preprocessed_eeg')
     stimulus_folder = os.path.join(data_folder, 'stimulus')
 
     # # stimulus feature which will be used for training the model. Can be either 'envelope' ( dimension 1) or 'mel' (dimension 28)
-    # stimulus_features = ["envelope"]
-    # stimulus_dimension = 1
+    stimulus_features = ["envelope"]
+    stimulus_dimension = 1
 
     # uncomment if you want to train with the mel spectrogram stimulus representation
-    stimulus_features = ["mel"]
-    stimulus_dimension = 10
+    # stimulus_features = ["mel"]
+    # stimulus_dimension = 10
 
     features = ["eeg"] + stimulus_features
 
