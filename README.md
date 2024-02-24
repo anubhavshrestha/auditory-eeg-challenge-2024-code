@@ -66,17 +66,11 @@ Each task has already some ready-to-go experiments files defined to give you a
 baseline and make you acquainted with the problem. The experiment files live
 in the `experiment` subfolder for each task. The training log,
 best model and evaluation results will be stored in a folder called
-`results_{experiment_name}`. For general ideas, you might want to look at the winners of the 
-[previous ICASSP auditory EEG challenge](https://exporl.github.io/auditory-eeg-challenge-2023).  
+`results_{experiment_name}`.
 
 ## Task1: Match-mismatch
     
-By running [task1_match_mismatch/experiments/dilated_convolutional_model.py](./task1_match_mismatch/experiments/dilated_convolutional_model.py),
-you can train the dilated convolutional model introduced by Accou et al. [(2021a)](https://doi.org/10.23919/Eusipco47968.2020.9287417) and [(2021b)](https://doi.org/10.1088/1741-2552/ac33e9).
-
-Other models you might find interesting are [Decheveigné et al (2021)](https://www.sciencedirect.com/science/article/pii/S1053811918300338), [Monesi et al. (2020)](https://ieeexplore.ieee.org/abstract/document/9054000), [Monesi et al. (2021)](https://arxiv.org/abs/2106.09622),….
-
-
+By running task1_match_mismatch/experiments/model.py, you can run the relevant model for Task 1 challenges.
 
 ## Task2: Regression (reconstructing spectrogram from EEG)
 
