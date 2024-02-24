@@ -1,7 +1,6 @@
 import tensorflow as tf
 from tensorflow.keras.layers import Dropout, Input, Conv1D, LSTM, Dense, Flatten, Concatenate
 
-"""Example experiment for the 2 mismatched segments dilation model."""
 import glob
 import json
 import logging
