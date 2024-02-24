@@ -4,6 +4,12 @@ This github repository documents my participation to the [2024 ICASSP Auditory E
 
 ## Task1: Match-mismatch
 
+The goal of this task was to determine which segment of speech matches the EEG given five segments of speech and a segment of EEG data. For this task, I implemented various Machine Learning models like CNN+RNN, LSTM, dilated LSTM, and so on. After trying various such models, I got upto 62% accuracy for the dilated CNN and LSTM model on the validation set.
+
+## Task2: The second task was to reconstruct the mel spectorgram from the EEG. 
+
+While I could not make significant contribution to this task, I have included general dataset, code for preprocessing the EEG and for creating commonly used stimulus representations, and two baseline methods as given by the ICASSP team.
+
 # Prerequisites
 
 Python >= 3.6
@@ -14,19 +20,6 @@ Steps to get a working setup:
 
 ## 1. Clone this repository and install the [requirements.txt](requirements.txt)
 ```bash
-# Clone this repository
-git clone https://github.com/exporl/auditory-eeg-challenge-2024-code
-
-# Go to the root folder
-cd auditory-eeg-challenge-2024-code
-
-# Optional: install a virtual environment
-python3 -m venv venv # Optional
-source venv/bin/activate # Optional
-
-# Install requirements.txt
-python3 -m install requirements.txt
-```
 
 ## 2. [Download the data](https://homes.esat.kuleuven.be/~lbollens/)
 
