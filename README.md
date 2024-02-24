@@ -54,8 +54,6 @@ Adjust `dataset_folder` in the `config.json` file from `null` to the absolute pa
 If you follow the BIDS structure, by downloading the whole dataset, the folders preprocessed_eeg, preprocessed_stimuli and split_data, should be located inside the 'derivatives' folder. If you only download these three folders, make sure they are either in a subfolder 'derivatives', or change the 'derivatives' folder in the config, otherwise you will get a file-not-found error when trying to run the experiments. 
   
 
-OK, you should be all setup now!
-
     
 
 # Running the tasks
@@ -64,16 +62,11 @@ Each task has already some ready-to-go experiments files defined to give you a
 baseline and make you acquainted with the problem. The experiment files live
 in the `experiment` subfolder for each task. The training log,
 best model and evaluation results will be stored in a folder called
-`results_{experiment_name}`. For general ideas, you might want to look at the winners of the 
-[previous ICASSP auditory EEG challenge](https://exporl.github.io/auditory-eeg-challenge-2023).  
+`results_{experiment_name}`. 
 
 ## Task1: Match-mismatch
     
-By running [task1_match_mismatch/experiments/dilated_convolutional_model.py](./task1_match_mismatch/experiments/dilated_convolutional_model.py),
-you can train the dilated convolutional model introduced by Accou et al. [(2021a)](https://doi.org/10.23919/Eusipco47968.2020.9287417) and [(2021b)](https://doi.org/10.1088/1741-2552/ac33e9).
-
-Other models you might find interesting are [Decheveigné et al (2021)](https://www.sciencedirect.com/science/article/pii/S1053811918300338), [Monesi et al. (2020)](https://ieeexplore.ieee.org/abstract/document/9054000), [Monesi et al. (2021)](https://arxiv.org/abs/2106.09622),….
-
+By running task1_match_mismatch/experiments/model.py], you can train models related to Task 1 Match-mismatch.
 
 
 ## Task2: Regression (reconstructing spectrogram from EEG)
