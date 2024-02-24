@@ -49,10 +49,6 @@ If you want to recreate the preprocessing steps, you will need to download these
 It is possible to adapt the preprocessing steps in `sparrKULee.py` to your own needs, by adding/removing preprocessing steps. For more detailed information on the pipeline, see the [brain_pipe documentation](https://exporl.github.io/brain_pipe/).
 
 
-Note that it is possible to use the same preprocessed (and split) dataset for both task 1 and task 2, but it is not required.
-
-
-
 ## 3. Adjust the `config.json` accordingly
 
 There is a general `config.json` defining the folder names and structure for the data (i.e. [util/config.json](./util/config.json) ).
