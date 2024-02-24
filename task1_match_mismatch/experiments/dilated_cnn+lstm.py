@@ -1,18 +1,12 @@
 import tensorflow as tf
-from tensorflow.keras.layers import Input, Conv1D, LSTM, Dense, Flatten, Concatenate, BatchNormalization, Dropout, GlobalAveragePooling1D
+from tensorflow.keras.layers import Input, Conv1D, LSTM, Dense, Flatten, Dot, Concatenate, BatchNormalization, Dropout, GlobalAveragePooling1D
 
-print("*********improved_dilation_model_with_lstm****************")
 
-import tensorflow as tf
-from tensorflow.keras.layers import Conv1D, LSTM, BatchNormalization, Dropout, Dense, Flatten, Input, Dot, Concatenate
-"""Example experiment for the 2 mismatched segments dilation model."""
 import glob
 import json
 import logging
 import os, sys
-import tensorflow as tf
 
-import sys
 # add base path to sys
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
 
