@@ -20,11 +20,23 @@ Steps to get a working setup:
 
 ## 1. Clone this repository and install the [requirements.txt](requirements.txt)
 ```bash
+# Clone this repository
+git clone https://github.com/exporl/auditory-eeg-challenge-2024-code
 
-## 2. [Download the data](https://homes.esat.kuleuven.be/~lbollens/)
+# Go to the root folder
+cd auditory-eeg-challenge-2024-code
 
-You will need a password, which you will receive when you [register](https://exporl.github.io/auditory-eeg-challenge-2024/registration/).
-The folder contains multiple folders (and `zip` files containing the same data as their corresponding folders). For bulk downloading, we recommend using the `zip` files, 
+# Optional: install a virtual environment
+python3 -m venv venv # Optional
+source venv/bin/activate # Optional
+
+# Install requirements.txt
+python3 -m install requirements.txt
+```
+
+## 2. [Download the data]
+
+Download the dataset provided by the organizing team of this challenge. After downloading the dataset, the following information might help.
 
    1. `split_data(.zip)` contains already preprocessed, split and normalized data; ready for model training/evaluation. 
 If you want to get started quickly, you can opt to only download this folder/zipfile.
